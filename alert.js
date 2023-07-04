@@ -1,44 +1,84 @@
-// let login = prompt('login');
+// let time = prompt('Время', '');
 
-// let message = (login == 'Сотрудник') ? 'Привет' :
-//   (login == 'Директор') ? 'Здравствуйте' :
-//   (login == '') ? 'Нет логина' :
-//   '';
-//   alert(login);
+// let message;
 
-
-
-// let hour =  prompt('Время');
-
-// let m1 =(hour < 10 || hour > 18)? 'Закрыто':
-//  (hour > 10 || hour < 18)? 'Открыто':
-//  (hour == '')? 'Ошибка':
-//    '';
-//   alert(m1);
-//   console.log(hour);
-
-// let hour =  prompt('Цифра');
-// if (hour == 5) {
-//   let message =('Это пятерка');
+// time = Number(time)
+// if (isNaN(time) || time == " " ) {
+//   message = 'Ошибка';
 // } else {
-//   let message =('Это не пятерка');
+
+//   if (time > 10 && time < 18) {
+//     message = 'Открыто';
+//   } else {
+//     message = 'Закрыто';
+//   }
 // }
+
 // alert(message);
 
-let time = prompt('Время', '');
+let timeString = prompt("Время", "");
 
 let message;
-
-if (time == 'Number.isInteger') {
-  message = 'Ошибка';
-} else  {
-  time = Number(time)
-
-  if (time > 10 || time < 18) {
-    message = 'Открыто';
+let time = parseInt(timeString);
+if ((time < 0 || time > 23) || isNaN(time)) {
+  message = "ошибка";
+} else {
+  if (time => 10 && time <= 18) {
+    message = "Открыто";
   } else {
-    message = 'Закрыто';
+    message = "Закрыто";
   }
 }
 
 alert(message);
+
+// let time = prompt('Время', '');
+
+// let message;
+
+// time = Number(time);
+// if (typeof time != 'number'
+// ) {
+//   message = 'Ошибка';
+// } else {
+
+//   if (time > 10 && time < 18) {
+//     message = 'Открыто';
+//   } else {
+//     message = 'Закрыто';
+//   }
+// }
+
+// alert(message);
+
+// let time = prompt('Время', '');
+
+// let message;
+
+// time = Number(time);
+
+// if (Number.isNaN(Number(time))
+// ) {
+//   message = 'Ошибка';
+// } else {
+
+//   if (time > 10 && time < 18) {
+//     message = 'Открыто';
+//   } else {
+//     message = 'Закрыто';
+//   }
+// }
+
+// alert(message);
+
+// let userName = prompt("Время?", '');
+// let message;
+
+//   if (userName >= 10 $$ userName <= 18) {
+//     message= 'Открыто' ;
+//   } else if (!(userName >= 10 $$ userName <= 18)) {
+//     message= 'Закрыто' ;
+//   } else {
+//     message= 'Ошибка' ;
+//   }
+//   alert(message);
